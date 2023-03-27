@@ -36,3 +36,6 @@ call s:source_rc('fzf.rc.vim')
 " nerdtree.rc.vim
 call s:source_rc('nerdtree.rc.vim')
 
+" fugitiv.rc.vim
+call s:source_rc('fugitiv.rc.vim')
+
