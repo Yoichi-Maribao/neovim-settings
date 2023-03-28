@@ -28,13 +28,13 @@ depends = ['/vim-airline-themes']
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
-repo = 'ryanoasis/vim-devicons'
-
-[[plugins]]
 repo = 'preservim/nerdtree'
 
 [[plugins]]
 repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
 repo = 'tpope/vim-commentary'
