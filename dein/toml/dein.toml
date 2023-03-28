@@ -34,6 +34,9 @@ repo = 'preservim/nerdtree'
 repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+
+[[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
