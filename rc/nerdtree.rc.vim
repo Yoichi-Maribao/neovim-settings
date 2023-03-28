@@ -1,5 +1,5 @@
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
-nnoremap <silent> <C-e> :NERDTreeFocus<CR>
+nnoremap <silent> <C-e> :NERDTreeFind<CR>
 " show dotfiles
 let NERDTreeShowHidden=1
 " Hide certain files and directories from NERDTree
