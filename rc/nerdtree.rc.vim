@@ -1,5 +1,5 @@
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
-nnoremap <silent> <C-e> :NERDTreeFocus<CR>
+nnoremap <silent> <C-e> :NERDTreeFind<CR>
 " show dotfiles
 let NERDTreeShowHidden=1
 " Hide certain files and directories from NERDTree
@@ -14,15 +14,14 @@ function! NERDTreeFindFile(node)
   endif
   let args = {
   \   'source': 'rg --files -- ' . path,
-  \   'sink': { lines -> lines },
+  \   'sink': function('FzfFindFilesSink'),
   \   'down': '~50%',
   \ }
-  let list = fzf#run(fzf#wrap(args))
-  if len(list)
-    execute 'NERDTreeFind' list[0]
-  endif
+  call fzf#run(fzf#wrap(args))
 endfunction
-" function to grep files under current node
+function! FzfFindFilesSink(files)
+  execute 'NERDTreeFind' a:files
+endfunction
 function! NERDTreeGrepFile(node)
   if a:node.path.isDirectory == 1
     let path = a:node.path.str()
