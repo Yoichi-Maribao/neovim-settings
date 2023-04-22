@@ -1,4 +1,4 @@
-
+source $VIMRUNTIME/macros/matchit.vim
 " leaderをスペースに設定
 let mapleader = "\<Space>"
 
@@ -13,13 +13,6 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " 画面幅変更
 nmap <Leader>+ :vertical resize +10<CR>
 nmap <Leader>- :vertical resize -10<CR>
-
-" 自動でかっこを挿入
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
 
 " 矢印キーは甘え
 noremap <Left> <Nop>

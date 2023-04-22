@@ -1,5 +1,6 @@
 " 行番号を表示
 set number
+set relativenumber
 " シンタックスハイライトを有効化
 syntax enable
 " コメントアウトを改行した時の自動コメントアウトを無効化
@@ -51,3 +52,13 @@ set hlsearch
 " 行オフセットを追加
 set scrolloff=5
 
+" toggle relativenumber
+function! ToggleRnu()
+  if(&rnu == 1)
+    set nornu
+  else
+    set rnu
+  endif
+endfunction
+
+nmap <leader>r :call ToggleRnu()<CR>  

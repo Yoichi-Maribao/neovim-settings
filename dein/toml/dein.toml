@@ -47,3 +47,12 @@ repo = 'tpope/vim-commentary'
 
 [[plugins]]
 repo = 'bkad/CamelCaseMotion'
+
+[[plugins]]
+repo = 'machakann/vim-sandwich'
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'

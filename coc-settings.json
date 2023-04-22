@@ -1,4 +1,8 @@
 {
   "javascript.suggest.autoImports": true, 
-  "typescript.suggest.autoImports": true
+  "typescript.suggest.autoImports": true,
+  "suggest.snippetIndicator": " ►",
+  "eslint.enable": false,
+  "prettier.enable": true,
+  "angular.enable-strict-mode-prompt": true
 }
